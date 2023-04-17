@@ -7,23 +7,21 @@
 
 import Foundation
 
-struct Topic {
-    var title: String
-    var detail: String?
+enum Topic {
+    case scanner
+    case collectionView
     
-    init(title: String) {
-        self.title = title
-        self.detail = nil
+    var title: String {
+        switch self {
+        case .scanner:
+            return "Scanner"
+        case .collectionView:
+            return "CollectionView"
+        }
     }
 }
 
 class RootViewModel {
     
-    var topics: [Topic] = []
-    
-    init() {
-        topics = [
-            .init(title: "Scanner")
-        ]
-    }
+    var topics: [Topic] = [.scanner, .collectionView]
 }

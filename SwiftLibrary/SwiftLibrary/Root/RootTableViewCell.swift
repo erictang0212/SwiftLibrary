@@ -14,5 +14,4 @@ class RootTableViewCell: UITableViewCell {
     func setup(title: String) {
         titleLabel.text = title
     }
-    
 }

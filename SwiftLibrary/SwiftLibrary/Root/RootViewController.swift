@@ -52,6 +52,19 @@ class RootViewController: UIViewController {
 // MARK: - UITableViewDelegate
 extension RootViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let topic = rootViewModel.topics[indexPath.row]
+        
+        switch topic {
+        case .scanner:
+            return
+        case .collectionView:
+            let viewController = HorizontalCenteredCollectionViewController()
+            navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
+    
 }
 
 // MARK: - UITableViewDataSource
