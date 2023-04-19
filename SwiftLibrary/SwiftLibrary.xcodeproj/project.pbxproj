@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		242BA59C29F02FA8002CBDE9 /* SnapKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242BA59B29F02FA8002CBDE9 /* SnapKit+Extension.swift */; };
+		24417BCF29ED3C1000695865 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24417BCE29ED3C1000695865 /* UICollectionView+Extension.swift */; };
 		245A0D8B29EBFF2E0048AF3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245A0D8A29EBFF2E0048AF3D /* AppDelegate.swift */; };
 		245A0D8D29EBFF2E0048AF3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245A0D8C29EBFF2E0048AF3D /* SceneDelegate.swift */; };
 		245A0D9429EBFF2F0048AF3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 245A0D9329EBFF2F0048AF3D /* Assets.xcassets */; };
 		245A0D9729EBFF2F0048AF3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 245A0D9529EBFF2F0048AF3D /* LaunchScreen.storyboard */; };
-		24A8AD2829EBFFAF00367966 /* SnapKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A8AD2529EBFFAF00367966 /* SnapKit+Extension.swift */; };
 		24A8AD2929EBFFAF00367966 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A8AD2629EBFFAF00367966 /* UIView+Extension.swift */; };
 		24A8AD2A29EBFFAF00367966 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A8AD2729EBFFAF00367966 /* UITableView+Extension.swift */; };
 		24A8AD3229EBFFBB00367966 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A8AD2D29EBFFBB00367966 /* RootViewController.swift */; };
@@ -22,13 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		242BA59B29F02FA8002CBDE9 /* SnapKit+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SnapKit+Extension.swift"; sourceTree = "<group>"; };
+		24417BCE29ED3C1000695865 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		245A0D8729EBFF2E0048AF3D /* SwiftLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		245A0D8A29EBFF2E0048AF3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		245A0D8C29EBFF2E0048AF3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		245A0D9329EBFF2F0048AF3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		245A0D9629EBFF2F0048AF3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		245A0D9829EBFF2F0048AF3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24A8AD2529EBFFAF00367966 /* SnapKit+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SnapKit+Extension.swift"; sourceTree = "<group>"; };
 		24A8AD2629EBFFAF00367966 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		24A8AD2729EBFFAF00367966 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		24A8AD2D29EBFFBB00367966 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -68,12 +70,11 @@
 		245A0D8929EBFF2E0048AF3D /* SwiftLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				24A8AD2429EBFFAF00367966 /* Extension */,
-				24A8AD2C29EBFFBB00367966 /* Root */,
 				24A8AD3129EBFFBB00367966 /* Scanner */,
-				24A8AD2B29EBFFBB00367966 /* UICollectionView */,
+				24A8AD2429EBFFAF00367966 /* Extension */,
 				245A0D8A29EBFF2E0048AF3D /* AppDelegate.swift */,
 				245A0D8C29EBFF2E0048AF3D /* SceneDelegate.swift */,
+				24A8AD2C29EBFFBB00367966 /* Root */,
 				245A0D9329EBFF2F0048AF3D /* Assets.xcassets */,
 				245A0D9529EBFF2F0048AF3D /* LaunchScreen.storyboard */,
 				245A0D9829EBFF2F0048AF3D /* Info.plist */,
@@ -84,25 +85,19 @@
 		24A8AD2429EBFFAF00367966 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				24A8AD2529EBFFAF00367966 /* SnapKit+Extension.swift */,
+				242BA59B29F02FA8002CBDE9 /* SnapKit+Extension.swift */,
 				24A8AD2629EBFFAF00367966 /* UIView+Extension.swift */,
 				24A8AD2729EBFFAF00367966 /* UITableView+Extension.swift */,
+				24417BCE29ED3C1000695865 /* UICollectionView+Extension.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		24A8AD2B29EBFFBB00367966 /* UICollectionView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UICollectionView;
 			sourceTree = "<group>";
 		};
 		24A8AD2C29EBFFBB00367966 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				24A8AD2D29EBFFBB00367966 /* RootViewController.swift */,
 				24A8AD2E29EBFFBB00367966 /* RootViewModel.swift */,
+				24A8AD2D29EBFFBB00367966 /* RootViewController.swift */,
 				24A8AD2F29EBFFBB00367966 /* RootTableViewCell.xib */,
 				24A8AD3029EBFFBB00367966 /* RootTableViewCell.swift */,
 			);
@@ -193,14 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24417BCF29ED3C1000695865 /* UICollectionView+Extension.swift in Sources */,
 				245A0D8B29EBFF2E0048AF3D /* AppDelegate.swift in Sources */,
 				24A8AD3529EBFFBB00367966 /* RootTableViewCell.swift in Sources */,
 				24A8AD3329EBFFBB00367966 /* RootViewModel.swift in Sources */,
 				245A0D8D29EBFF2E0048AF3D /* SceneDelegate.swift in Sources */,
 				24A8AD3229EBFFBB00367966 /* RootViewController.swift in Sources */,
+				242BA59C29F02FA8002CBDE9 /* SnapKit+Extension.swift in Sources */,
 				24A8AD2A29EBFFAF00367966 /* UITableView+Extension.swift in Sources */,
 				24A8AD2929EBFFAF00367966 /* UIView+Extension.swift in Sources */,
-				24A8AD2829EBFFAF00367966 /* SnapKit+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +335,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 962F6WYS3M;
+				DEVELOPMENT_TEAM = 668Q4XYSA2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftLibrary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -366,7 +362,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 962F6WYS3M;
+				DEVELOPMENT_TEAM = 668Q4XYSA2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftLibrary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
