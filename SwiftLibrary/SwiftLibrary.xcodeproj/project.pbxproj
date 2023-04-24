@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		242BA59C29F02FA8002CBDE9 /* SnapKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242BA59B29F02FA8002CBDE9 /* SnapKit+Extension.swift */; };
+		2433B41229F3BA04001642FF /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2433B41029F3BA04001642FF /* CollectionViewController.swift */; };
+		2433B41329F3BA04001642FF /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2433B41129F3BA04001642FF /* CollectionViewController.xib */; };
+		2433B41629F3BA96001642FF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2433B41529F3BA96001642FF /* Coordinator.swift */; };
+		2433B41829F3BAFE001642FF /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2433B41729F3BAFE001642FF /* BaseCoordinator.swift */; };
+		2433B41A29F3BD40001642FF /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2433B41929F3BD40001642FF /* RootCoordinator.swift */; };
+		2433B42129F3DBEA001642FF /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2433B42029F3DBEA001642FF /* MainCoordinator.swift */; };
 		24417BCF29ED3C1000695865 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24417BCE29ED3C1000695865 /* UICollectionView+Extension.swift */; };
 		245A0D8B29EBFF2E0048AF3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245A0D8A29EBFF2E0048AF3D /* AppDelegate.swift */; };
 		245A0D8D29EBFF2E0048AF3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245A0D8C29EBFF2E0048AF3D /* SceneDelegate.swift */; };
@@ -24,6 +30,12 @@
 
 /* Begin PBXFileReference section */
 		242BA59B29F02FA8002CBDE9 /* SnapKit+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SnapKit+Extension.swift"; sourceTree = "<group>"; };
+		2433B41029F3BA04001642FF /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		2433B41129F3BA04001642FF /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
+		2433B41529F3BA96001642FF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		2433B41729F3BAFE001642FF /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		2433B41929F3BD40001642FF /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		2433B42029F3DBEA001642FF /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		24417BCE29ED3C1000695865 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		245A0D8729EBFF2E0048AF3D /* SwiftLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		245A0D8A29EBFF2E0048AF3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +63,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2433B40F29F3B9D4001642FF /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				2433B41029F3BA04001642FF /* CollectionViewController.swift */,
+				2433B41129F3BA04001642FF /* CollectionViewController.xib */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		2433B41429F3BA2C001642FF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2433B41529F3BA96001642FF /* Coordinator.swift */,
+				2433B41729F3BAFE001642FF /* BaseCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		2433B42229F3DDE1001642FF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				245A0D8A29EBFF2E0048AF3D /* AppDelegate.swift */,
+				245A0D8C29EBFF2E0048AF3D /* SceneDelegate.swift */,
+				2433B42029F3DBEA001642FF /* MainCoordinator.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2433B42329F3DDFA001642FF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				24A8AD2429EBFFAF00367966 /* Extension */,
+				2433B41429F3BA2C001642FF /* Coordinator */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		245A0D7E29EBFF2E0048AF3D = {
 			isa = PBXGroup;
 			children = (
@@ -70,11 +119,11 @@
 		245A0D8929EBFF2E0048AF3D /* SwiftLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				24A8AD3129EBFFBB00367966 /* Scanner */,
-				24A8AD2429EBFFAF00367966 /* Extension */,
-				245A0D8A29EBFF2E0048AF3D /* AppDelegate.swift */,
-				245A0D8C29EBFF2E0048AF3D /* SceneDelegate.swift */,
+				2433B42229F3DDE1001642FF /* App */,
 				24A8AD2C29EBFFBB00367966 /* Root */,
+				24A8AD3129EBFFBB00367966 /* Scanner */,
+				2433B40F29F3B9D4001642FF /* CollectionView */,
+				2433B42329F3DDFA001642FF /* Shared */,
 				245A0D9329EBFF2F0048AF3D /* Assets.xcassets */,
 				245A0D9529EBFF2F0048AF3D /* LaunchScreen.storyboard */,
 				245A0D9829EBFF2F0048AF3D /* Info.plist */,
@@ -100,6 +149,7 @@
 				24A8AD2D29EBFFBB00367966 /* RootViewController.swift */,
 				24A8AD2F29EBFFBB00367966 /* RootTableViewCell.xib */,
 				24A8AD3029EBFFBB00367966 /* RootTableViewCell.swift */,
+				2433B41929F3BD40001642FF /* RootCoordinator.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -175,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2433B41329F3BA04001642FF /* CollectionViewController.xib in Resources */,
 				24A8AD3429EBFFBB00367966 /* RootTableViewCell.xib in Resources */,
 				245A0D9729EBFF2F0048AF3D /* LaunchScreen.storyboard in Resources */,
 				245A0D9429EBFF2F0048AF3D /* Assets.xcassets in Resources */,
@@ -192,10 +243,15 @@
 				245A0D8B29EBFF2E0048AF3D /* AppDelegate.swift in Sources */,
 				24A8AD3529EBFFBB00367966 /* RootTableViewCell.swift in Sources */,
 				24A8AD3329EBFFBB00367966 /* RootViewModel.swift in Sources */,
+				2433B41229F3BA04001642FF /* CollectionViewController.swift in Sources */,
 				245A0D8D29EBFF2E0048AF3D /* SceneDelegate.swift in Sources */,
 				24A8AD3229EBFFBB00367966 /* RootViewController.swift in Sources */,
+				2433B41829F3BAFE001642FF /* BaseCoordinator.swift in Sources */,
+				2433B41629F3BA96001642FF /* Coordinator.swift in Sources */,
 				242BA59C29F02FA8002CBDE9 /* SnapKit+Extension.swift in Sources */,
+				2433B41A29F3BD40001642FF /* RootCoordinator.swift in Sources */,
 				24A8AD2A29EBFFAF00367966 /* UITableView+Extension.swift in Sources */,
+				2433B42129F3DBEA001642FF /* MainCoordinator.swift in Sources */,
 				24A8AD2929EBFFAF00367966 /* UIView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
