@@ -18,9 +18,11 @@ class RootViewController: UIViewController {
     
     private var rootViewModel: RootViewModel
     
+    var didSelectedCell: ((Topic) -> Void)?
+    
     // MARK: - Init Method
-    init() {
-        rootViewModel = RootViewModel()
+    init(rootViewModel: RootViewModel) {
+        self.rootViewModel = rootViewModel
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -53,16 +55,9 @@ class RootViewController: UIViewController {
 extension RootViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         let topic = rootViewModel.topics[indexPath.row]
-        
-        switch topic {
-        case .scanner:
-            return
-        case .collectionView:
-            let viewController = HorizontalCenteredCollectionViewController()
-            navigationController?.pushViewController(viewController, animated: true)
-        }
+        didSelectedCell?(topic)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
 }
