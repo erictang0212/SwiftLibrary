@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24252C2429F90CA800DAD657 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24252C2329F90CA800DAD657 /* LeftAlignedCollectionViewFlowLayout.swift */; };
 		242BA59C29F02FA8002CBDE9 /* SnapKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242BA59B29F02FA8002CBDE9 /* SnapKit+Extension.swift */; };
 		2433B41229F3BA04001642FF /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2433B41029F3BA04001642FF /* CollectionViewController.swift */; };
 		2433B41329F3BA04001642FF /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2433B41129F3BA04001642FF /* CollectionViewController.xib */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24252C2329F90CA800DAD657 /* LeftAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		242BA59B29F02FA8002CBDE9 /* SnapKit+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SnapKit+Extension.swift"; sourceTree = "<group>"; };
 		2433B41029F3BA04001642FF /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		2433B41129F3BA04001642FF /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24252C2229F90C6800DAD657 /* CollectionViewFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				24252C2329F90CA800DAD657 /* LeftAlignedCollectionViewFlowLayout.swift */,
+			);
+			path = CollectionViewFlowLayout;
+			sourceTree = "<group>";
+		};
 		2433B40F29F3B9D4001642FF /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +133,7 @@
 				24A8AD2C29EBFFBB00367966 /* Root */,
 				24A8AD3129EBFFBB00367966 /* Scanner */,
 				2433B40F29F3B9D4001642FF /* CollectionView */,
+				24252C2229F90C6800DAD657 /* CollectionViewFlowLayout */,
 				2433B42329F3DDFA001642FF /* Shared */,
 				245A0D9329EBFF2F0048AF3D /* Assets.xcassets */,
 				245A0D9529EBFF2F0048AF3D /* LaunchScreen.storyboard */,
@@ -251,6 +262,7 @@
 				242BA59C29F02FA8002CBDE9 /* SnapKit+Extension.swift in Sources */,
 				2433B41A29F3BD40001642FF /* RootCoordinator.swift in Sources */,
 				24A8AD2A29EBFFAF00367966 /* UITableView+Extension.swift in Sources */,
+				24252C2429F90CA800DAD657 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				2433B42129F3DBEA001642FF /* MainCoordinator.swift in Sources */,
 				24A8AD2929EBFFAF00367966 /* UIView+Extension.swift in Sources */,
 			);

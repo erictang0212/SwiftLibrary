@@ -30,7 +30,6 @@ class RootCoordinator: Coordinator {
             case .collectionView:
                 self.showCollectionViewController()
             }
-            
         }
         navigationController.pushViewController(rootViewController, animated: true)
     }
